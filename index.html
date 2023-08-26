@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.html" method="post">
+        <!--
+            Method: POST - Nao apresenta nome na URL do navegador
+                        Dados sensiveis;
+                        Fotos e Arquivos;
+                        >3000bites;
+                    GET - Apresenta na URL do navegador
+        -->
+
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="button" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
